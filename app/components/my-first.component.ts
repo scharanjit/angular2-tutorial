@@ -5,8 +5,10 @@ import { Component } from '@angular/core';
   selector: 'my-component',
   template: `<div> 
   <h1>Hello my name is {{name}} </h1> 
-  
-  Check the console <button (click)="sayMyName()">Say my name : </button></div>
+  </div>
+  <div>
+  Check the console <button (click)="sayMyName()">Say my name : </button>
+  </div>
   `
  
 })
