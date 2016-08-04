@@ -1,2 +1,6 @@
 /typings/
 /node_modules/
+.vscode/
+/npm-debug.log
+/*.js
+/*.js.map
