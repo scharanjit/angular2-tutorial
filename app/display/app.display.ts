@@ -4,6 +4,7 @@ import { MyComponent } from '../components/my-first.component';
 import { KeyUpComponent_v1 } from '../components/keyup.component';
 import { LoopbackComponent } from '../components/loop-back.component';
 import { LittleTourComponent } from '../components/little-tour.component';
+import { HeroFormComponent } from '../components/hero-form.component';
 
 @Component({
   selector: 'app-display',
@@ -20,8 +21,11 @@ import { LittleTourComponent } from '../components/little-tour.component';
 
     <br>
    <div class="boxes"> Little Tour : <br> <little-tour></little-tour> <br> </div>
+   <br>
+   <hero-form></hero-form>
+
     `,
-    directives: [ClickMeComponent,MyComponent,KeyUpComponent_v1,LoopbackComponent , LittleTourComponent]
+    directives: [ClickMeComponent,MyComponent,KeyUpComponent_v1,LoopbackComponent , LittleTourComponent, HeroFormComponent]
 })
 export class AppDisplay {
  
