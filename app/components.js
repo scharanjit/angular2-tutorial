@@ -9,17 +9,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var MyComponent = (function () {
+    function MyComponent() {
+        this.name = 'Charanjit Singh';
     }
-    AppComponent = __decorate([
+    MyComponent.prototype.sayMyName = function () {
+        console.log("My name is ", this.name);
+    };
+    MyComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            template: '<h1>My First Angular 2 App</h1>'
+            selector: 'my-component',
+            template: '<div> <h1>Hello my name is {{name}} </h1> Check the console <button (click)="sayMyName()">Say my name</button></div>'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], MyComponent);
+    return MyComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.MyComponent = MyComponent;
+//# sourceMappingURL=components.js.map
