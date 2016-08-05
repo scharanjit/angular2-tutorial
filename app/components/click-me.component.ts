@@ -15,4 +15,5 @@ export class ClickMeComponent {
   onClickMe() {
     this.clickMessage = 'You are my hero!';
   }
+  
 }
