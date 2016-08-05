@@ -8,8 +8,6 @@ import { Component } from '@angular/core';
     {{clickMessage}}
     </div>
     `
-    
-    
 })
 export class ClickMeComponent {
   clickMessage = '';
